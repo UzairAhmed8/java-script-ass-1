@@ -1,0 +1,134 @@
+@font-face {
+    font-family: Goldman;
+    src: url(assets/fonts/Goldman-Regular.ttf);
+}
+
+:root{
+    --theme-color: gold;
+    --secondary-theme-color: orangered;
+    --third-theme-color: black;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #373737;
+    color: white;
+    padding: 0px 100px;
+    font-family: Goldman;
+}
+
+.section-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 140px;
+}
+
+.sec-1-con-1 img{
+    height: 200px;
+    border-radius: 100%;
+    border: 3px solid white;
+}
+
+.sec-1-con-2 ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.sec-1-con-2 a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    transition: all ease-in-out 0.3s;
+    animation-name:  hoverAnimation;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+.sec-1-con-2 a:hover{
+    color:red;
+    animation: none;
+}
+
+@keyframes hoverAnimation {
+    0%{
+        color: var(--theme-color);
+    }
+    25%{
+        color: cyan;
+    }
+    50%{
+        color: orangered;
+    }
+    75%{
+        color: red;
+    }
+    100%{
+        color: purple;
+    }
+}
+
+.section-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.sec-2-con-1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.sec-2-con-1 h3{
+    font-size: 30px;
+    animation-name:  hoverAnimation;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;   
+}
+
+.sec-2-con-1 input{
+    background-color: #171717;
+    border: none;
+    width: 820px;
+    height: 20px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    color: white;
+}
+
+.sec-2-con-1 input:focus{
+    background-color: #171717;
+    color: white;
+}
+
+.sec-2-con-1 button{
+    padding: 10px 30px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-family: Goldman;
+    box-shadow: 1px 5px 5px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+
+.sec-2-con-1 button:hover{
+    background-color: white;
+    color: #373737;
+    transform: scale(1.2 ,1.2);
+}

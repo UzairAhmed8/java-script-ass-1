@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="website icon" type="png"
+    href="assets/website-logo/Black_and_White_Modern_Entertainment_Logo-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="section-1">
+        <div class="sec-1-con-1">
+            <img src="assets/website-logo/Black_and_White_Modern_Entertainment_Logo-removebg-preview.png" alt="">
+        </div>
+        <div class="sec-1-con-2">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Signup</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <form id="loginForm">
+    <div class="section-2">
+
+            <div class="sec-2-con-1">
+                <h3>Enter your Email</h3>
+                <input type="text" placeholder="example12345@email.com" name="userEmail" id="userEmail" required>
+            </div>
+    
+            <div class="sec-2-con-1">
+                <h3>Enter a Username</h3>
+                <input type="text" placeholder="Dernierdas-12345" name="userName" id="userName"  required>
+            </div>
+    
+            <div class="sec-2-con-1">
+                <h3>Enter a Strong Password</h3>
+                <input type="text" placeholder="Password must be 8 characters long" name="userPassword" id="userPassword"  required>
+                <div class="" style="padding-top: 30px;">
+                    <button type="button" onclick="loginFunction()">Submit</button>
+                </div>
+            </div>
+            
+        </form>
+        
+    </div>
+
+    <script src="function.js"></script>
+</body>
+</html>
